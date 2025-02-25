@@ -44,7 +44,7 @@ try {
                 </TableHeader>
                 <TableBody>
                     {
-                        applicants && applicants?.applications.map((app) => (
+                        applicants && applicants?.applications?.map((app) => (
                             <tr>
                                 <TableCell className="font-medium">{app?.applicant?.fullName}</TableCell>
                                 <TableCell>{app?.applicant?.email}</TableCell>
