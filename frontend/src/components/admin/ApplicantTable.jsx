@@ -20,7 +20,9 @@ try {
     const res=await axios.post(`${APPLICATION_API_END_POINT}/status/${id}/update`,{status},{
         withCredentials:true,
     })
-
+if (res.status === 200) {
+                toast.success(res?.data?.message);
+            }
     
 } catch (error) {
     console.log(error)
