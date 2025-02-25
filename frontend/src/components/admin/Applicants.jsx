@@ -41,7 +41,7 @@ const Applicants = () => {
                     stiffness: 70,
                     damping: 15,
                 }} className='max-w-5xl mx-auto'>
-                <h1 className='font-bold text-xl my-5'>Applicants ({applicants?.applications.length})</h1>
+                <h1 className='font-bold text-xl my-5'>Applicants ({applicants?.applications?.length})</h1>
                 <ApplicantTable />
             </motion.div>
         </div>
